@@ -1,0 +1,228 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.java_android_assignment1.Calculator" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textOperator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operator"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/textCurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.93"
+                android:gravity="right"
+                android:text="Current"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/Blue" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="@color/Blue" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="@color/Blue" />
+
+            <Button
+                android:id="@+id/btnNegation"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+/-"
+                android:textColor="@color/DarkGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn4"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textColor="@color/Blue" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/Blue" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6"
+                android:textColor="@color/Blue" />
+
+            <Button
+                android:id="@+id/btnPlus"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@color/DarkGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn7"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textColor="@color/Blue" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8"
+                android:textColor="@color/Blue" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9"
+                android:textColor="@color/Blue" />
+
+            <Button
+                android:id="@+id/btnMinus"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/DarkGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn0"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/Blue" />
+
+            <Button
+                android:id="@+id/btnCC"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CC"
+                android:textColor="@color/Red" />
+
+            <Button
+                android:id="@+id/btnCA"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CA"
+                android:textColor="@color/Red" />
+
+            <Button
+                android:id="@+id/btnEquals"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:textColor="@color/DarkGreen" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
